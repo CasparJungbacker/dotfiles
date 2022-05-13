@@ -2,9 +2,8 @@
 " Vim Plug
 """"""""""""""""""""""""""""""
 call plug#begin()
-Plug 'dracula/vim',{'as':'dracula'}
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+"Plug 'vim-airline/vim-airline'
+"Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/nerdtree'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'octol/vim-cpp-enhanced-highlight'
@@ -13,6 +12,8 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'lervag/vimtex'
 Plug 'SirVer/ultisnips'
 Plug 'chriskempson/base16-vim'
+Plug 'agude/vim-eldar'
+"Plug 'altercation/vim-colors-solarized'
 call plug#end()
 
 """"""""""""""""""""""""""""""
@@ -63,9 +64,14 @@ let g:NERDTreeWinSize=38
 " Theme
 """"""""""""""""""""""""""""""
 "colorscheme gruvbox-material
-colorscheme base16-default-dark
-set t_Co=256
-set termguicolors
+"colorscheme base16-default-dark
+"colorscheme eldar
+syntax enable
+set background=dark
+let g:solarized_termcolors=16
+"colorscheme solarized
+"set t_Co=256
+"set termguicolors
 
 """"""""""""""""""""""""""""""
 " General
@@ -93,7 +99,7 @@ let g:cpp_experimental_template_highlight = 1
 """"""""""""""""""""""""""""""
 " ultisnips
 """"""""""""""""""""""""""""""
-let g:UltiSnipsSnippetDirectories=[$HOME.'/.config/nvim/plugged/ultisnips/snippets']
+let g:UltiSnipsSnippetDirectories=[$HOME.'/.config/nvim/plugged/ultisnips/UltiSnips']
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
@@ -101,10 +107,10 @@ let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 " Vimtex
 """"""""""""""""""""""""""""""
 let g:tex_flavor='latex'
-let g:vimtex_view_method='zathura'
+let g:vimtex_view_method='skim'
 let g:vimtex_quickfix_mode=0
 let g:vimtex_complete_enabled = 1
 let g:vimtex_complete_recursive_bib = 1
-let g:vimtex_compiler_latexmk_engines = {
-    \ '_'                : '-xelatex',
-    \}
+"let g:vimtex_compiler_latexmk_engines = {
+"    \ '_'                : '-xelatex',
+"    \}
