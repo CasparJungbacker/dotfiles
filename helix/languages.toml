@@ -1,0 +1,23 @@
+[language-server.python-lsp]
+command = "pylsp"
+
+[language-server.texlab]
+command = "texlab"
+
+[language-server.texlab.config.texlab.build]
+onSave = true
+forwardSearchAfter = true
+args = ["-lualatex"]
+
+[language-server.texlab.config.texlab.chktex]
+onOpenAndSave = true
+onEdit = true
+
+[[language]]
+name = "python"
+language-servers = [ "python-lsp" ]
+
+
+[[language]]
+name = "latex"
+language-servers = [ "texlab" ]

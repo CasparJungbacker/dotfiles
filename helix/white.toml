@@ -1,0 +1,20 @@
+# UI stuff
+"ui.selection" = { modifiers = ["reversed"] }
+"ui.menu.selected" = { modifiers = ["reversed"] }
+"ui.cursor.match" = { modifiers = ["underlined"] }
+"ui.linenr.selected" = { modifiers = ["bold"] }
+"ui.cursorline" = { bg = "black" }
+
+# Code
+"keyword" = { modifiers = ["bold"] }
+"keyword.storage.modifier" = ''
+"comment" = { modifiers = ["italic", "dim"] }
+"operator" = "light-blue"
+
+# Markdown
+"markup.heading" = "light-blue"
+
+# Git
+"diff.plus" = "green"
+"diff.delta" = "yellow"
+"diff.minus" = "red"
