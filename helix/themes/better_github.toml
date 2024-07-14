@@ -1,0 +1,27 @@
+
+"ui.selection" = { modifiers = ["reversed"] }
+attribute = "light-red"
+keyword = "light-red"
+"keyword.directive" = "light-red"          # -- preprocessor comments (#if in C)
+namespace = "light-magenta"
+punctuation = "default"
+"punctuation.delimiter" = "default"
+operator = "light-blue"
+special = "blue"
+variable = "default"
+"variable.parameter" = "orange"
+"variable.builtin" = "red"
+type = "orange"
+"type.builtin" = "blue"
+constructor = "purple"
+function = "purple"
+"function.macro" = "purple"
+tag = "green"
+comment = { modifiers = ["dim"]}
+constant = "light-blue"
+"constant.builtin" = "light-blue"
+string = "light-blue"
+"constant.numeric" = "light-blue"
+"constant.character.escape" = "blue"
+# used for lifetimes
+label = "red"
